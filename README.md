@@ -5,6 +5,8 @@ bound states, tunnelling, electronic bands, and lattice vibrations. The
 controls connect mathematical parameters directly to wavefunctions, probability
 densities, spectra, dispersion relations, and animated normal modes.
 
+**Interactive playground:** <https://arkavo.github.io/E3-229-pages/>
+
 ## Physics modules
 
 ### Free particle
@@ -67,10 +69,11 @@ corresponding energy baselines.
 
 ### Phonons
 
-Animate normal modes of one-dimensional alternating-spring chains and a
-two-dimensional scalar square-lattice teaching model. Dispersion plots show
-acoustic and optical behavior, Brillouin-zone paths, and the dependence on
-spring constants.
+Animate normal modes of a one-dimensional alternating-spring chain, then move
+to a material-specific graphene visualizer using the six-branch MC2D-71 phonon
+dataset. Click a point on the \(\Gamma\rightarrow M\rightarrow K\rightarrow
+\Gamma\) dispersion to animate its complex eigenvector in a repeated,
+rotatable honeycomb lattice.
 
 For a monoatomic nearest-neighbor chain,
 
@@ -85,8 +88,9 @@ For a monoatomic nearest-neighbor chain,
 - Energies, lengths, masses, and spring constants should be interpreted
   consistently within each module, not as SI values.
 - Continuum state counts and densities of states are Weyl-law approximations.
-- The two-dimensional phonon module is a scalar pedagogical model rather than a
-  full vector dynamical-matrix treatment.
+- The graphene frequencies and eigenvectors are sourced from the
+  [Materials Cloud MC2D-71 dataset](https://mc2d.materialscloud.org/details/mc2d-71);
+  animation amplitudes are visually exaggerated.
 - Numerical visualizations are intended to support physical intuition and
   tutorial discussion, not replace a converged research calculation.
 
