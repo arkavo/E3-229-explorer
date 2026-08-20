@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="refresh" content="8; url=https://arkavo.github.io/E3-229-explorer/">
+    <title>Page not found · E3-229</title>
+    <link rel="icon" href="/E3-229-explorer/assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            color-scheme: light dark;
+            --background: #071a2c;
+            --surface: #102a43;
+            --surface-border: rgba(146, 202, 236, 0.22);
+            --primary: #4ea5d9;
+            --secondary: #f2c14e;
+            --text: #f4f8fb;
+            --muted: #afc5d8;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: grid;
+            place-items: center;
+            overflow: hidden;
+            color: var(--text);
+            background:
+                radial-gradient(circle at 20% 15%, rgba(78, 165, 217, 0.22), transparent 34rem),
+                radial-gradient(circle at 85% 80%, rgba(242, 193, 78, 0.12), transparent 28rem),
+                var(--background);
+            font-family: "Source Sans 3", system-ui, sans-serif;
+        }
+
+        .orbit {
+            position: fixed;
+            width: min(72vw, 760px);
+            aspect-ratio: 1;
+            border: 1px solid rgba(78, 165, 217, 0.11);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .orbit::before,
+        .orbit::after {
+            content: "";
+            position: absolute;
+            inset: 16%;
+            border: 1px solid rgba(78, 165, 217, 0.09);
+            border-radius: 50%;
+            transform: rotate(58deg) scaleX(0.55);
+        }
+
+        .orbit::after { transform: rotate(-58deg) scaleX(0.55); }
+
+        main {
+            position: relative;
+            z-index: 1;
+            width: min(calc(100% - 32px), 620px);
+            padding: clamp(28px, 6vw, 52px);
+            border: 1px solid var(--surface-border);
+            border-radius: 28px;
+            background: color-mix(in srgb, var(--surface) 82%, transparent);
+            box-shadow: 0 28px 80px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(18px);
+            text-align: center;
+        }
+
+        .brand-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 20px;
+            display: grid;
+            place-items: center;
+            color: white;
+            border-radius: 18px;
+            background: linear-gradient(145deg, #2f6b9a, #4ea5d9);
+            box-shadow: 0 12px 30px rgba(47, 107, 154, 0.3);
+        }
+
+        .brand-icon svg { width: 40px; height: 40px; }
+
+        .error-code {
+            margin: 0;
+            color: var(--primary);
+            font-size: clamp(4.5rem, 18vw, 8rem);
+            font-weight: 700;
+            letter-spacing: -0.07em;
+            line-height: 0.9;
+        }
+
+        h1 {
+            margin: 20px 0 10px;
+            font-size: clamp(1.5rem, 5vw, 2.15rem);
+            line-height: 1.15;
+        }
+
+        p {
+            max-width: 470px;
+            margin: 0 auto;
+            color: var(--muted);
+            font-size: 1rem;
+            line-height: 1.65;
+        }
+
+        .actions {
+            margin-top: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .home-link {
+            min-height: 46px;
+            padding: 0 22px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            border-radius: 23px;
+            color: #071a2c;
+            background: var(--secondary);
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform 160ms ease, box-shadow 160ms ease;
+        }
+
+        .home-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(242, 193, 78, 0.2);
+        }
+
+        .redirect-note {
+            margin-top: 22px;
+            font-size: 0.8125rem;
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --background: #eef6fb;
+                --surface: #ffffff;
+                --surface-border: rgba(47, 107, 154, 0.18);
+                --text: #102a43;
+                --muted: #526b80;
+            }
+
+            main { box-shadow: 0 28px 80px rgba(47, 107, 154, 0.14); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .home-link { transition: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="orbit" aria-hidden="true"></div>
+    <main>
+        <div class="brand-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M20.942 3.058c2.47 2.469.468 8.474-4.471 13.413S5.527 23.412 3.058 20.942.588 12.468 7.529 7.529 18.473.588 20.942 3.058Zm-17.884 0C.588 5.527 2.59 11.533 7.529 16.471s10.944 6.941 13.413 4.471.468-8.474-4.471-13.413S5.527.588 3.058 3.058Z"/>
+                    <circle cx="12" cy="12" r="2.5" opacity=".55"/>
+                </g>
+            </svg>
+        </div>
+        <div class="error-code" aria-label="Error 404">404</div>
+        <h1>This state could not be found</h1>
+        <p>
+            The requested page lies outside the explorer’s allowed spectrum.
+            Return to E3-229 to continue with the interactive course modules.
+        </p>
+        <div class="actions">
+            <a class="home-link" href="https://arkavo.github.io/E3-229-explorer/">
+                Return to E3-229
+                <span aria-hidden="true">→</span>
+            </a>
+        </div>
+        <p class="redirect-note" aria-live="polite">
+            Redirecting automatically in <span id="countdown">8</span> seconds.
+        </p>
+    </main>
+    <script>
+        (() => {
+            const destination = 'https://arkavo.github.io/E3-229-explorer/';
+            const countdown = document.getElementById('countdown');
+            let seconds = 8;
+            const timer = window.setInterval(() => {
+                seconds -= 1;
+                countdown.textContent = String(Math.max(0, seconds));
+                if (seconds <= 0) {
+                    window.clearInterval(timer);
+                    window.location.replace(destination);
+                }
+            }, 1000);
+        })();
+    </script>
+</body>
+</html>
