@@ -5,7 +5,7 @@ bound states, tunnelling, electronic bands, and lattice vibrations. The
 controls connect mathematical parameters directly to wavefunctions, probability
 densities, spectra, dispersion relations, and animated normal modes.
 
-**Interactive playground:** <https://arkavo.github.io/E3-229-pages/>
+**Interactive playground:** <https://arkavo.github.io/E3-229-explorer/>
 
 ## Physics modules
 
