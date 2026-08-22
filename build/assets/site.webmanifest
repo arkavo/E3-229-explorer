@@ -1,0 +1,22 @@
+{
+  "name": "E3 229: Principles of Microelectronic Devices",
+  "short_name": "E3-229",
+  "description": "Interactive quantum mechanics and crystal structure course explorer.",
+  "start_url": "../",
+  "scope": "../",
+  "display": "standalone",
+  "background_color": "#071a2c",
+  "theme_color": "#2F6B9A",
+  "icons": [
+    {
+      "src": "bookmark-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "bookmark-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
